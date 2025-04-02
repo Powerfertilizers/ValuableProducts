@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title> Power Fertilizers</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-image: url('https://i.postimg.cc/sXxGBnbq/pexels-oguz-karademir-591747508-17693614.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: clamp(36px, 3.5vw, 100px);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.2;
+            /* Consistent readability */
+            margin: 0.5em 0;
+            /* Flexible spacing */
+            padding: 0 15px;
+            /* Slightly more padding for narrow screens */
+        }
+
+        h2 {
+            text-align: center;
+            font-size: clamp(30px, 5vw, 60px);
+            /* font-family: "Brush Script MT";*/
+            color: #299620;
+            font-size: 30px;
+        }
+
+        h6 {
+            margin: 10px;
+            text-align: center;
+            color: red;
+        }
+
+        .search-bar {
+            margin: 20px auto;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .search-bar input {
+            padding: 11px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 18px;
+            text-align: center;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 18px;
+            cursor: pointer;
+            border: none;
+            margin: 20px auto;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .search-bar button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* More columns for smaller items */
+            column-gap: 10px;
+            /* Reduced gap */
+            row-gap: 10px;
+            padding: 15px;
+            /* Reduced padding */
+            max-width: 2000px;
+            /* Adjust max-width to fit smaller items */
+            margin: 0 auto;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* Two columns for smaller screens */
+            }
+        }
+
+        @media (max-width: 300px) {
+            .product-grid {
+                grid-template-columns: 2fr;
+                /* Single column for very small screens */
+                column-gap: 5px;
+                row-gap: 5px;
+                padding: 5px;
+            }
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            background-color: #ccc;
+            font-size: 10px;
+
+        }
+
+        .product img {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product button {
+            margin: 5px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 10px;
+        }
+
+        .product button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .product .addCartButton {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .custom-input {
+            padding: 9px;
+            text-align: center;
+            border-radius: 6px;
+            outline: none;
+            transition: all 0.2s ease-in-out;
+            color: #333;
+            width: 80%;
+            border: none;
+            font-size: 12px;
+        }
+
+        /* Power Fertilizers Logo Alignments*/
+        .logoimage {
+            Height: 150px;
+            Width: 150px;
+        }
+
+        p {
+            font-size: 10px;
+            text-align: center;
+            margin: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://i.postimg.cc/qqwF3kVy/Power-fertilizer-Logo.png" Class="logoimage">
+        <h1>POWER FERTILIZERS</h1>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <h2
+            style="font-family: 'Dancing Script', cursive; font-size: 28px; color: #2E8B57; font-weight: bold; text-align: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+            Grow Better with Our Fertilizers
+        </h2>
+        <p style="
+           text-shadow: 3px 1px 6px black;
+        ">
+            High-quality fertilizers to boost your crop yield.
+        </p>
+        <p style="
+          text-shadow: 3px 1px 6px black;
+        ">
+            तुमचे पीक उत्पादन वाढवण्यासाठी उच्च दर्जाची खते.
+        </p>
+        <div class="search-bar">
+            <input type="text" id="searchBar" placeholder="Search for products... / उत्पादने शोधा...">
+            <button id="searchButton">Search/शोधा</button>
+        </div>
+    </header>
+    <h6>🏠Free Home Delivery 💰Cash On Delivery</h6>
+
+    <!-- Customer Details Section -->
+    <section id="customerDetails"
+        style="max-width: 1000px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); text-align: center; background: #f9f9f9;">
+        <h5 style="margin-bottom: 15px; font-size: 18px; color: #333;">Customer Details / ग्राहकाचे तपशील</h5>
+        <input type="text" id="customerName" placeholder="Your Name / तुमचे नाव"
+            style="width: 95%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="text" id="customerAddress" placeholder="Your Address / तुमचा पत्ता"
+            style="width: 95%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="text" id="customerNumber" placeholder="Your Number / तुमचा नंबर"
+            style="width: 95%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+        <style>
+            #saveCustomerDetails:hover {
+                background-color: #0056b3;
+                transform: scale(1.05);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+        </style>
+        <button id="saveCustomerDetails"
+            style="background-color: #007bff; color: white; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; margin: 12px; border: none;">Save
+            Details</button>
+    </section>
+
+    <!-- Products Sections -->
+    <!-- Organic Sections -->
+    <section class="Organic Product">
+        <section id="products">
+            <h4 style="text-align: center; font-size: 20px; margin: 10px;">Our Products</h4>
+            <h4 style="text-align: center; font-size: 25px; margin: 10px;">Organic Products</h4>
+            <div class="product-grid">
+
+                <!-- Product 01 -->
+                <div class="product" data-name="Amino Acids 80% Powder" data-price="995">
+                    <img src="https://i.ibb.co/RS4gKg8/Amino-Acids.jpg" alt="Amino Acids 80% Powder">
+                    <h3><a href="#" class="open-modal" data-target="modal-amino">Amino Acids 80% Powder</a></h3>
+                    <p>Price: ₹995/kg</p>
+                    <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                    <button class="addCartButton">Add to Cart</button>
+                </div>
+
+                <!-- Product 02 -->
+                <div class="product" data-name="Potassium Fulvic Acids 80% Powder" data-price="720">
+                    <img src="https://i.ibb.co/KXymVDc/Potassium-Fulvic-Acids.png" alt="Potassium-Fulvic-Acids"
+                        border="0">
+                    <h3><a href="#" class="open-modal" data-target="modal-potassium">Potassium Fulvic Acids 80%
+                            Powder</a></h3>
+                    <p>Price: ₹720/kg</p>
+                    <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                    <button class="addCartButton">Add to Cart</button>
+                </div>
+
+                <!-- Product 08 -->
+                <div class="product" data-name="Potassium Humate Shiny Flakes 98%" data-price="700">
+                    <img src="https://i.ibb.co/xhj5wmS/Potassium-Humate.png" alt="Potassium Humate" border="0">
+                    <h3><a href="#" class="open-modal" data-target="modal-potassium-humate">Potassium Humate Shiny
+                            Flakes
+                            98%</a></h3>
+                    <p>Price: ₹700/kg</p>
+                    <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                    <button class="addCartButton">Add to Cart</button>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product" data-name="Green Seaweeds Extracts Powder" data-price="1510">
+                    <img src="https://i.ibb.co/Jmn3yWT/Green-Seaweeds-Extracts.png" alt="Green-Seaweeds-Extracts"
+                        border="0">
+                    <h3><a href="#" class="open-modal" data-target="modal-seaweed">Green Seaweeds Extracts
+                            Powder</a></h3>
+                    <p>Price: ₹1510/kg</p>
+                    <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                    <button class="addCartButton">Add to Cart</button>
+                </div>
+        </section>
+        <!-- Section Finish  of Organic Products Section -->
+
+        <!-- Micronutrients Products Section -->
+        <section class="Micronutrients Products">
+            <section id="products">
+                <h4 style="text-align: center; font-size: 25px; margin: 10px;">Micronutrients Products</h4>
+                <div class="product-grid">
+                    <!-- Product 05 -->
+                    <div class="product" data-name="Ferrous Chelated 12% EDTA Powder" data-price="2000">
+                        <img src="https://i.ibb.co/s9xQYk9/Ferrus-Chelated.png" alt="Ferrous Chelated" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-ferrous">Ferrous Chelated 12% EDTA
+                                Powder</a></h3>
+                        <p>Price: ₹2000/kg</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                        <button class="addCartButton">Add to Cart</button>
+                    </div>
+
+                    <!-- Product 06 -->
+                    <div class="product" data-name="Zinc Chelated 12% EDTA Powder" data-price="1000">
+                        <img src="https://i.ibb.co/WDJs8rv/Zinc-Chelated.png" alt="Zinc Chelated" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-zinc">Zinc Chelated 12% EDTA Powder</a>
+                        </h3>
+                        <p>Price: ₹1000/kg</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                        <button class="addCartButton">Add to Cart</button>
+                    </div>
+
+                    <!-- Product 07 -->
+                    <div class="product" data-name="Boron 20% Powder" data-price="350">
+                        <img src="https://i.ibb.co/dpqgHLW/Boron.png" alt="Boron" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-boron">Boron 20% Powder</a></h3>
+                        <p>Price: ₹350/kg</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                        <button class="addCartButton">Add to Cart</button>
+                    </div>
+
+                    <!-- Product 03 -->
+                    <div class="product" data-name="Chelated Micro nutrients EDTA Powder" data-price="1200">
+                        <img src="https://i.ibb.co/Y0L1pxQ/Chelated-Mix-Micronutrients-EDTA.png"
+                            alt="Chelated-Mix-Micronutrients-EDTA" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-chelated">Chelated Micro nutrients EDTA
+                                Powder</a></h3>
+                        <p>Price: ₹1200/kg</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                        <button class="addCartButton">Add to Cart</button>
+                    </div>
+
+                    <!-- Product 04 -->
+                    <div class="product" data-name="Micro nutrients EDTA Powder" data-price="850">
+                        <img src="https://i.ibb.co/rQDJsww/Micronutrients-EDTA.png" alt="Micronutrients-EDTA"
+                            border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-micronutrients">Micro nutrients EDTA
+                                Powder</a></h3>
+                        <p>Price: ₹850/kg</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                        <button class="addCartButton">Add to Cart</button>
+                    </div>
+
+                    <!-- Product 20 -->
+                    <div class="product" data-name="Copper Sulfate" data-price="---">
+                        <img src="https://i.ibb.co/xHmPNxS/Copper-Sulfate.png" alt="Copper Sulfate" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-copper-sulfate">Copper Sulfate</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+            </section>
+        </section>
+        <!-- Section Finish of Micronutrients Products -->
+
+        <!-- NPK Special Formulations -->
+        <section class="NPK Special Formulations">
+            <!-- Product 09 -->
+            <section id="products">
+                <h4 style="text-align: center; font-size: 25px; margin: 10px;">NPK Special Formulations</h4>
+                <div class="product-grid">
+
+                    <!-- Product 12 -->
+                    <div class="product" data-name="00:00:50" data-price="---">
+                        <img src="https://i.ibb.co/5LLfW9k/00-00-50.png" alt="00-00-50" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-000050">00:00:50</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+
+                    <!-- Product 13 -->
+                    <div class="product" data-name="19:19:19" data-price="---">
+                        <img src="https://i.ibb.co/V94CCTt/19-19-19.png" alt="19-19-19" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-191919">19:19:19</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+
+                    <!-- Product 14 -->
+                    <div class="product" data-name="20:20:20" data-price="---">
+                        <img src="https://i.ibb.co/FgDDdg0/20-20-20.png" alt="20-20-20" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-202020">20:20:20</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+
+                    <!-- Products 15 -->
+                    <div class="product" data-name="13:40:13" data-price="---">
+                        <img src="https://i.ibb.co/YjgdtnC/13-40-13.png" alt="13-40-13" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-134013">13:40:13</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+
+                    <!-- Product 16 -->
+                    <div class="product" data-name="13:00:45" data-price="---">
+                        <img src="https://i.ibb.co/RPL705h/13-00-45.png" alt="13-00-45" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-130045">13:00:45</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+
+                    <!-- Product 17 -->
+                    <div class="product" data-name="12:61:00" data-price="---">
+                        <img src="https://i.ibb.co/1vFRxkH/12-61-00.png" alt="12-61-00" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-126100">12:61:00</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+
+                    <!-- Product 18 -->
+                    <div class="product" data-name="00:60:20" data-price="---">
+                        <img src="https://i.ibb.co/DbmJhpq/00-60-20.png" alt="00-60-20" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-006020">00:60:20</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+
+                    <!-- Product 19 -->
+                    <div class="product" data-name="00:52:34" data-price="---">
+                        <img src="https://i.ibb.co/q3DQWhFP/00-52-34.png" alt="00-52-34" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-005234">00:52:34</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+            </section>
+            <!-- Remaining Products Add as Per Your Need -->
+        </section>
+        <!-- Section Finish of NPK Special Formulation -->
+
+        <!-- Macronutrients Products Section -->
+        <section class="Macronutrients Products Section">
+            <section id="products">
+                <h4 style="text-align: center; font-size: 25px; margin: 10px;">Macronutrients Products</h4>
+                <div class="product-grid">
+
+                    <div class="product" data-name="Calcium Nitrate" data-price="---">
+                        <img src="https://i.ibb.co/ZdzF1SY/Calcium-Nitrate.png" alt="Calcium Nitrate" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-calcium-nitrate">Calcium Nitrate</a></h3>
+                        <p>Price: ₹---/kg</p>
+                        <p style="color: red; font-weight: bold;">Out of Stock</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण" disabled>
+                        <button class="addCartButton" disabled>Add to Cart</button>
+                    </div>
+
+                    <!-- Product 11 -->
+                    <div class="product" data-name="Sulfur Powder" data-price="200">
+                        <img src="https://i.ibb.co/7nXmp9g/Sulfur.png" alt="Sulfur" border="0">
+                        <h3><a href="#" class="open-modal" data-target="modal-sulfur">Sulfur Powder</a></h3>
+                        <p>Price: ₹200/kg</p>
+                        <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
+                        <button class="addCartButton">Add to Cart</button>
+                    </div>
+            </section>
+            <!-- Section Finish of NPK Special Formulation -->
+
+            <div style="text-align: center; font-weight: bold;">
+                <a href="https://drive.google.com/file/d/1PrpVl1K4pBvyH9hx5nhr2kH40EdNRtvl/view?usp=sharing">Products
+                    List📒</a>
+            </div>
+            <style>
+                /* Floating Button 1 */
+                .floating-btn1 {
+                    position: fixed;
+                    bottom: 30%;
+                    right: 1px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: rgba(177, 212, 250, 0.3);
+                    /* Adjust transparency */
+                    color: white;
+                    font-size: 15px;
+                    border: 2px solid rgba(177, 212, 250, 0.5);
+                    /* Optional border */
+                    cursor: pointer;
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s;
+                }
+
+                .floating-btn1:hover {
+                    background: rgba(0, 86, 179, 0.5);
+                    /* Slightly darker on hover */
+                    transform: scale(1.1);
+                }
+
+                /* Floating Main Button2 */
+                .floating-btn2 {
+                    position: fixed;
+                    bottom: 20%;
+                    right: 1px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: rgba(177, 212, 250, 0.3);
+                    color: white;
+                    font-size: 20px;
+                    border: 2px solid rgba(177, 212, 250, 0.5);
+                    cursor: pointer;
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s;
+                }
+
+                .floating-btn1:hover {
+                    background: rgba(0, 86, 179, 0.5);
+                    transform: scale(1.1);
+                }
+
+                /* Hidden Buttons */
+                .floating-buttons {
+                    width: 10%;
+                    position: fixed;
+                    bottom: 10%;
+                    right: 8%;
+                    display: none;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                .floating-btn {
+                    width: 230px;
+                    height: 40px;
+                    border-radius: 8px;
+                    background: rgba(0, 86, 179, 0.5);
+                    color: white;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                }
+
+                .floating-btn:hover {
+                    background: rgba(0, 86, 179, 0.8);
+                }
+
+                #cartDetails {
+                    margin: 1%;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    background-color: #f9f9f9;
+                    text-align: center;
+                    font-size: 20px;
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+                }
+
+                table {
+                    width: 100%;
+                    border: 1px solid lightgrey;
+                    margin-right: 10%;
+                    text-align: center;
+                }
+
+                th,
+                td {
+                    width: clamp(10%, 15%, 20%);
+                    border: 2px solid lightgrey;
+                    font-size: clamp(12px, 2vw, 16px);
+                    text-align: center;
+                    height: clamp(30px, 5vh, 50px);
+                    padding: 5px;
+                    box-sizing: border-box;
+                }
+
+                /* Small screens */
+                @media (max-width: 768px) {
+
+                    th,
+                    td {
+                        font-size: clamp(10px, 1.8vw, 14px);
+                        height: clamp(25px, 4vh, 40px);
+                        padding: 3px;
+                    }
+                }
+
+                /* Very small screens */
+                @media (max-width: 400px) {
+
+                    th,
+                    td {
+                        font-size: clamp(8px, 1.5vw, 12px);
+                        height: clamp(20px, 3vh, 35px);
+                        padding: 2px;
+                        width: 20%;
+                    }
+                }
+
+                /* Large screens */
+                @media (min-width: 1200px) {
+
+                    th,
+                    td {
+                        font-size: clamp(14px, 2vw, 18px);
+                        height: clamp(40px, 5vh, 60px);
+                        padding: 8px;
+                    }
+                }
+
+                .button {
+                    color: white;
+                    border: none;
+                    padding: 8px 15px;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin: 10px;
+                }
+
+                #PlaceOrdertButton {
+                    background-color: #28a745;
+                }
+
+                #clearCartButton {
+                    background-color: #dc3545;
+                }
+            </style>
+
+            <!-- Floating Button1 -->
+            <button id="scrollToCartBtn" class="floating-btn1">🛒</button>
+
+            <!-- Floating Button2 -->
+            <button class="floating-btn2" id="main-btn">🏠</button>
+
+            <!-- Hidden Buttons -->
+            <div class="floating-buttons" id="sub-buttons">
+                <button class="floating-btn sub-btn">Organic Products </button>
+                <button class="floating-btn sub-btn">Micronutrients Products </button>
+                <button class="floating-btn sub-btn">NPK Special Formulation </button>
+                <button class="floating-btn sub-btn">Macronutrients Products </button>
+            </div>
+
+            <section id="cartDetails">
+                <h4>Cart Details / कार्टचे तपशील</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity in Kg</th>
+                            <th>Unit Price/Kg (₹)</th>
+                            <th>Total Price (₹)</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartItems">
+                        <tr>
+                            <td colspan="5">No items in the cart</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div
+                    style="text-align: right; font-size: 14px; margin-top: 10px; color: red; font-family: 'Courier New', Courier, monospace; font-weight: bold;">
+                    Total Amount: ₹<span id="cartTotal">0.00</span>
+                </div>
+                <div style="text-align: center;">
+                    <button id="PlaceOrdertButton" class="button">Place Order</button>
+                    <button id="clearCartButton" class="button">Clear Cart</button>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer
+                style="background-image: url('https://i.ibb.co/C2cFmw6/pexels-oguz-karademir-591747508-17693614-Copy.jpg'); background-size: cover; background-color: #87CEEB; padding: 10px; text-align: center; font-size: 10px;">
+                <p>© 2025 Power Fertilizers. All rights reserved.</p>
+            </footer>
+            <script src="scripte.js"></script>
+</body>

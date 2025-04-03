@@ -499,57 +499,93 @@
                     transform: scale(1.1);
                 }
 
-                /* Floating Main Button2 */
-                .floating-btn2 {
-                    position: fixed;
-                    bottom: 20%;
-                    right: 1px;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background: rgba(177, 212, 250, 0.3);
-                    color: white;
-                    font-size: 20px;
-                    border: 2px solid rgba(177, 212, 250, 0.5);
-                    cursor: pointer;
-                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    transition: 0.3s;
-                }
+/* Floating Main Button2 */
+.floating-btn2 {
+    position: fixed;
+    bottom: 20%;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(177, 212, 250, 0.3);
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgba(177, 212, 250, 0.5);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
 
-                .floating-btn1:hover {
-                    background: rgba(0, 86, 179, 0.5);
-                    transform: scale(1.1);
-                }
+.floating-btn2:hover {
+    background: rgba(0, 86, 179, 0.5);
+    transform: scale(1.1);
+}
 
-                /* Hidden Buttons */
-                .floating-buttons {
-                    width: 10%;
-                    position: fixed;
-                    bottom: 10%;
-                    right: 8%;
-                    display: none;
-                    flex-direction: column;
-                    gap: 10px;
-                }
+/* Hidden Buttons */
+.floating-buttons {
+    width: auto;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
 
-                .floating-btn {
-                    width: 230px;
-                    height: 40px;
-                    border-radius: 8px;
-                    background: rgba(0, 86, 179, 0.5);
-                    color: white;
-                    font-size: 16px;
-                    border: none;
-                    cursor: pointer;
-                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-                }
+.floating-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(0, 86, 179, 0.5);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
 
-                .floating-btn:hover {
-                    background: rgba(0, 86, 179, 0.8);
-                }
+.floating-btn:hover {
+    background: rgba(0, 86, 179, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .floating-btn2 {
+        bottom: 15%;
+        right: 5px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .floating-buttons {
+        right: 3%;
+    }
+    .floating-btn {
+        width: 160px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-btn2 {
+        bottom: 10%;
+        right: 2px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .floating-buttons {
+        right: 2%;
+    }
+    .floating-btn {
+        width: 140px;
+        font-size: 12px;
+    }
+}
+
 
                 #cartDetails {
                     margin: 1%;

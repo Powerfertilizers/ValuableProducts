@@ -1,5 +1,3 @@
-
-
 // Get references to important DOM elements
 const cartItems = document.getElementById("cartItems");
 const cartTotal = document.getElementById("cartTotal");
@@ -895,17 +893,31 @@ document.getElementById("scrollToCartBtn").addEventListener("click", function ()
     document.getElementById("cartDetails").scrollIntoView({ behavior: "smooth" });
 });
 
- //floting button 2 
+// floating button 2  
 document.getElementById("main-btn").addEventListener("click", function () {
     let subButtons = document.getElementById("sub-buttons");
     subButtons.style.display = subButtons.style.display === "flex" ? "none" : "flex";
 });
 
+// Add event listener to all sub-buttons
+const subButtonsContainer = document.getElementById("sub-buttons");
+const subButtons = subButtonsContainer.querySelectorAll("button");
+
+subButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        // Start 1-second timer to hide sub-buttons
+        setTimeout(() => {
+            subButtonsContainer.style.display = "none";
+        }, 000);
+    });
+});
+
+
 
 //function for Organic Products button
 document.addEventListener("DOMContentLoaded", function () {
-    const button = document.querySelector(".floating-btn.sub-btn");
-    const productsSection = document.getElementById("products");
+    const button = document.querySelector(".floating-btn.sub-btn1");
+    const productsSection = document.getElementById("products1");
     
     if (button && productsSection) {
         button.addEventListener("click", function () {
@@ -915,3 +927,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+//function for Micronutrients Products button
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".floating-btn.sub-btn2");
+    const productsSection = document.getElementById("products2");
+    
+    if (button && productsSection) {
+        button.addEventListener("click", function () {
+            productsSection.style.display = "block";
+            productsSection.scrollIntoView({ behavior: "smooth" });
+        });
+    }
+});
+
+//function for NPK Special Formulation Products button
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".floating-btn.sub-btn3");
+    const productsSection = document.getElementById("products3");
+    
+    if (button && productsSection) {
+        button.addEventListener("click", function () {
+            productsSection.style.display = "block";
+            productsSection.scrollIntoView({ behavior: "smooth" });
+        });
+    }
+});
+
+//function for NPK Special Formulation Products button
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".floating-btn.sub-btn4");
+    const productsSection = document.getElementById("products4");
+    
+    if (button && productsSection) {
+        button.addEventListener("click", function () {
+            productsSection.style.display = "block";
+            productsSection.scrollIntoView({ behavior: "smooth" });
+        });
+    }
+});

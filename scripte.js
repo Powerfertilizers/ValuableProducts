@@ -918,7 +918,7 @@ subButtons.forEach(button => {
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector(".floating-btn.sub-btn1");
     const productsSection = document.getElementById("products1");
-    
+
     if (button && productsSection) {
         button.addEventListener("click", function () {
             productsSection.style.display = "block";
@@ -932,7 +932,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector(".floating-btn.sub-btn2");
     const productsSection = document.getElementById("products2");
-    
+
     if (button && productsSection) {
         button.addEventListener("click", function () {
             productsSection.style.display = "block";
@@ -945,7 +945,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector(".floating-btn.sub-btn3");
     const productsSection = document.getElementById("products3");
-    
+
     if (button && productsSection) {
         button.addEventListener("click", function () {
             productsSection.style.display = "block";
@@ -958,7 +958,20 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector(".floating-btn.sub-btn4");
     const productsSection = document.getElementById("products4");
-    
+
+    if (button && productsSection) {
+        button.addEventListener("click", function () {
+            productsSection.style.display = "block";
+            productsSection.scrollIntoView({ behavior: "smooth" });
+        });
+    }
+});
+
+//function for Special Slurry Formulation button
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".floating-btn.sub-btn5");
+    const productsSection = document.getElementById("products5");
+
     if (button && productsSection) {
         button.addEventListener("click", function () {
             productsSection.style.display = "block";

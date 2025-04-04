@@ -64,7 +64,7 @@
             padding: 11px;
             width: 90%;
             border: 1px solid #ccc;
-            border-radius: 18px;
+            border-radius: 5px;
             text-align: center;
         }
 
@@ -72,7 +72,7 @@
             padding: 10px 20px;
             background-color: #4CAF50;
             color: white;
-            border-radius: 18px;
+            border-radius: 5px;
             cursor: pointer;
             border: none;
             margin: 20px auto;
@@ -231,7 +231,7 @@
     <!-- Products Sections -->
     <!-- Organic Sections -->
     <section class="Organic Product">
-        <section id="products">
+        <section id="products1">
             <h4 style="text-align: center; font-size: 20px; margin: 10px;">Our Products</h4>
             <h4 style="text-align: center; font-size: 25px; margin: 10px;">Organic Products</h4>
             <div class="product-grid">
@@ -282,7 +282,7 @@
 
         <!-- Micronutrients Products Section -->
         <section class="Micronutrients Products">
-            <section id="products">
+            <section id="products2">
                 <h4 style="text-align: center; font-size: 25px; margin: 10px;">Micronutrients Products</h4>
                 <div class="product-grid">
                     <!-- Product 05 -->
@@ -352,7 +352,7 @@
         <!-- NPK Special Formulations -->
         <section class="NPK Special Formulations">
             <!-- Product 09 -->
-            <section id="products">
+            <section id="products3">
                 <h4 style="text-align: center; font-size: 25px; margin: 10px;">NPK Special Formulations</h4>
                 <div class="product-grid">
 
@@ -442,7 +442,7 @@
 
         <!-- Macronutrients Products Section -->
         <section class="Macronutrients Products Section">
-            <section id="products">
+            <section id="products4">
                 <h4 style="text-align: center; font-size: 25px; margin: 10px;">Macronutrients Products</h4>
                 <div class="product-grid">
 
@@ -474,11 +474,11 @@
                 /* Floating Button 1 */
                 .floating-btn1 {
                     position: fixed;
-                    bottom: 30%;
+                    bottom: 5%;
                     right: 1px;
                     width: 40px;
                     height: 40px;
-                    border-radius: 50%;
+                    border-radius: 10%;
                     background: rgba(177, 212, 250, 0.3);
                     /* Adjust transparency */
                     color: white;
@@ -499,93 +499,88 @@
                     transform: scale(1.1);
                 }
 
-/* Floating Main Button2 */
-.floating-btn2 {
-    position: fixed;
-    bottom: 20%;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(177, 212, 250, 0.3);
-    color: white;
-    font-size: 20px;
-    border: 2px solid rgba(177, 212, 250, 0.5);
-    cursor: pointer;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-}
+                /* Floating Main Button2 */
+                .floating-btn2 {
+                    position: fixed;
+                    bottom:5%;
+                    left: 1px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10%;
+                    background: rgba(177, 212, 250, 0.3);
+                    color: white;
+                    font-size: 20px;
+                    border: 2px solid rgba(177, 212, 250, 0.5);
+                    cursor: pointer;
+                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s;
+                }
 
-.floating-btn2:hover {
-    background: rgba(0, 86, 179, 0.5);
-    transform: scale(1.1);
-}
+                .floating-btn1:hover {
+                    background: rgba(0, 86, 179, 0.5);
+                    transform: scale(1.1);
+                }
 
 /* Hidden Buttons */
 .floating-buttons {
-    width: auto;
     position: fixed;
-    bottom: 10%;
-    right: 5%;
+    bottom: 5%;
+    left: 13%;
     display: none;
     flex-direction: column;
     gap: 10px;
+    max-width: 90%; /* Ensures it doesn't take too much space on small screens */
+    align-items: flex-end; /* Aligns buttons to the right */
 }
 
 .floating-btn {
-    width: 200px;
+    width: 100%; /* Makes it flexible */
+    max-width: 230px; /* Prevents it from getting too large */
     height: 40px;
-    border-radius: 8px;
+    border-radius: 4px;
     background: rgba(0, 86, 179, 0.5);
     color: white;
     font-size: 16px;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .floating-btn:hover {
     background: rgba(0, 86, 179, 0.8);
+    transform: scale(1.05);
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .floating-btn2 {
-        bottom: 15%;
-        right: 5px;
-        width: 45px;
-        height: 45px;
-        font-size: 18px;
-    }
+@media (max-width: 600px) {
     .floating-buttons {
-        right: 3%;
+        bottom: 5%;
+        right: auto;
+        align-items: center;
     }
+
     .floating-btn {
-        width: 160px;
+        width: 180px; /* Slightly smaller on smaller screens */
+    }
+}
+
+@media (max-width: 300px) {
+    .floating-buttons {
+        bottom: 5%;
+        right: 2%;
+        align-items: center;
+    }
+
+    .floating-btn {
+        width: 150px; /* Further reduced for mobile */
         font-size: 14px;
     }
 }
-
-@media (max-width: 480px) {
-    .floating-btn2 {
-        bottom: 10%;
-        right: 2px;
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
-    .floating-buttons {
-        right: 2%;
-    }
-    .floating-btn {
-        width: 140px;
-        font-size: 12px;
-    }
-}
-
 
                 #cartDetails {
                     margin: 1%;
@@ -676,10 +671,10 @@
 
             <!-- Hidden Buttons -->
             <div class="floating-buttons" id="sub-buttons">
-                <button class="floating-btn sub-btn">Organic Products </button>
-                <button class="floating-btn sub-btn">Micronutrients Products </button>
-                <button class="floating-btn sub-btn">NPK Special Formulation </button>
-                <button class="floating-btn sub-btn">Macronutrients Products </button>
+                <button class="floating-btn sub-btn1">Organic Products </button>
+                <button class="floating-btn sub-btn2">Micronutrients Products </button>
+                <button class="floating-btn sub-btn3">NPK Special Formulation </button>
+                <button class="floating-btn sub-btn4">Macronutrients Products </button>
             </div>
 
             <section id="cartDetails">
@@ -702,7 +697,8 @@
                 </table>
                 <div
                     style="text-align: right; font-size: 14px; margin-top: 10px; color: red; font-family: 'Courier New', Courier, monospace; font-weight: bold;">
-                    Total Amount: ₹<span id="cartTotal">0.00</span>
+                    Total Amount: ₹<span id="cartTotal" style="font-family: 'Courier New', Courier, monospace; font-weight: bold;">0.00</span>
+
                 </div>
                 <div style="text-align: center;">
                     <button id="PlaceOrdertButton" class="button">Place Order</button>

@@ -814,6 +814,43 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         }
         ,
+        "Special Slurry Formulation": 
+        {
+            "General Details": "Special Slurry Formulation is a bio-nutrient-rich, microbial fertilizer made from natural ingredients organic sources. It is fermented over 45 days to promote beneficial microbial activity and enhance soil fertility. This slurry is designed to rejuvenate the soil before planting, improve microbial diversity, and promote plant health and root development in an eco-friendly way.",
+
+            "Composition": {
+                "Organic Carbon": "High",
+                "Nitrogen (Natural Source)": "Moderate to High",
+                "Microbial Culture": "Rich",
+                "Fats & Sugars": "Moderate",
+                "Moisture": "Present"
+            },
+
+            "Agricultural Uses": [
+                "Improves soil fertility and microbial activity by introducing beneficial bacteria and fungi.",
+                "Enhances root growth and seedling establishment through microbial support.",
+                "Acts as a natural soil conditioner by increasing organic matter and moisture retention.",
+                "Reduces soil-borne diseases through improved microbial balance.",
+                "Prepares beds for vegetable, fruit, and cereal crops by enriching the soil prior to sowing or transplanting."
+            ],
+
+            "Application": [
+                "Soil Application: Apply 5–10 litres per bed or 50–100 litres per acre 7–10 days before planting to allow microbial colonization.",
+                "Compost Enrichment: Add 10–20 litres per ton of compost to accelerate decomposition and nutrient cycling.",
+                "In-Crop Drenching (Optional): Dilute at 1:10 with water and apply around the base of plants once every 15–30 days to promote root health and microbial support.",
+                "Not Recommended for Foliar Use: Due to thick organic content, this slurry is best suited for soil applications."
+            ],
+
+            "Advantages": [
+                "Boosts microbial diversity in the soil, leading to improved nutrient availability and healthier root systems.",
+                "Enhances soil structure and aeration, allowing better water and nutrient absorption.",
+                "Reduces dependency on chemical fertilizers, offering a cost-effective and sustainable alternative.",
+                "Improves plant tolerance to pests and diseases by building a balanced soil ecosystem.",
+                "Ideal for organic farming systems and regenerative agriculture practices.",
+                "Can be made using on-farm inputs, reducing input costs and supporting local sustainability."
+            ]
+        }
+        ,
     };
 
     modalTriggers.forEach(trigger => {

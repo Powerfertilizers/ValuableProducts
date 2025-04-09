@@ -127,13 +127,14 @@ placeOrderButton.addEventListener("click", () => {
     const customerName = document.getElementById("customerName").value.trim();
     const customerAddress = document.getElementById("customerAddress").value.trim();
     const customerNumber = document.getElementById("customerNumber").value.trim();
+    const referenceCode = document.getElementById("referenceCode").value.trim();
 
-    if (!customerName || !customerAddress || !customerNumber) {
+    if (!customerName || !customerAddress || !customerNumber || !referenceCode) {
         alert("Please fill your details before placing an order. / ऑर्डर देण्यापूर्वी कृपया तुमचे तपशील भरा.");
         return;
     }
 
-    let orderDetails = `Order Details:\nName: ${customerName}\nAddress: ${customerAddress}\nMobile: ${customerNumber}\n`;
+    let orderDetails = `Order Details:\nName: ${customerName}\nAddress: ${customerAddress}\nMobile: ${referenceCode}\nMobile: ${customerNumber}\n`;
     orderDetails += `\nProducts:\n`;
 
 
@@ -160,8 +161,9 @@ saveCustomerDetailsButton.addEventListener("click", () => {
     const customerName = document.getElementById("customerName").value.trim();
     const customerAddress = document.getElementById("customerAddress").value.trim();
     const customerNumber = document.getElementById("customerNumber").value.trim();
+    const referenceCode = document.getElementById("referenceCode").value.trim();
 
-    if (!customerName || !customerAddress || !customerNumber) {
+    if (!customerName || !customerAddress || !customerNumber || !referenceCode) {
         alert("Please fill in all fields. / कृपया सर्व फील्ड भरा.");
         return;
     }

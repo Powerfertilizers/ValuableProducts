@@ -60,7 +60,7 @@ function updateCartDisplay() {
 
 // Function to delete product from the cart
 function deleteProduct(index) {
-    if (confirm("Are you sure you want to delete this product? / तुम्हाला खात्री आहे की तुम्ही हे उत्पादन हटवू इच्छिता?")) {
+    if (confirm("Are you sure you want to delete this product?")) {
         cart.splice(index, 1); // Remove item from array
         updateCartDisplay(); // Refresh cart display
     }
@@ -130,7 +130,7 @@ placeOrderButton.addEventListener("click", () => {
     const referenceCode = document.getElementById("referenceCode").value.trim();
 
     if (!customerName || !customerAddress || !customerNumber || !referenceCode) {
-        alert("Please fill your details before placing an order. / ऑर्डर देण्यापूर्वी कृपया तुमचे तपशील भरा.");
+        alert("Please fill your details before placing an order.");
         return;
     }
 
@@ -139,8 +139,9 @@ placeOrderButton.addEventListener("click", () => {
 
 
     cart.forEach((item) => {
-        orderDetails += `${item.name} - ${item.quantity}kg @ ₹${item.unitPrice}/kg = ₹${item.totalPrice}\n`;
+        orderDetails += `${item.name}\n  ${item.quantity}kg @ ₹${item.unitPrice}/kg\n  = ₹${item.totalPrice}\n\n`;
     });
+    
 
     orderDetails += `\nTotal Amount: ₹${cartTotal.textContent}`;
 
@@ -164,11 +165,11 @@ saveCustomerDetailsButton.addEventListener("click", () => {
     const referenceCode = document.getElementById("referenceCode").value.trim();
 
     if (!customerName || !customerAddress || !customerNumber || !referenceCode) {
-        alert("Please fill in all fields. / कृपया सर्व फील्ड भरा.");
+        alert("Please fill in all fields.");
         return;
     }
 
-    alert("Customer details saved successfully! / ग्राहक तपशील यशस्वीरित्या जतन केले!");
+    alert("Customer details saved successfully!");
 });
 
 const searchBar = document.getElementById("searchBar");
@@ -816,9 +817,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         }
         ,
-        "Special Slurry Formulation": 
+        "Special Slurry Formulation":
         {
-            "General Details": "Special Slurry Formulation is a bio-nutrient-rich, microbial fertilizer made from natural ingredients organic sources. It is fermented over 45 days to promote beneficial microbial activity and enhance soil fertility. This slurry is designed to rejuvenate the soil before planting, improve microbial diversity, and promote plant health and root development in an eco-friendly way.",
+            "General Details": "Special Slurry Formulation is a bio-nutrient-rich, microbial fertilizer made from natural ingredients organic sources. It is fermented over 45 days to promote beneficial microbial activity and enhance soil fertility. This slurry is designed to rejuvenate the soil before planting, improve microbial diversity, and promote plant health and root development in an eco-friendly way. This special formulation 200-liter drum is powerful than 35-ton FYM.",
 
             "Composition": {
                 "Organic Carbon": "High",

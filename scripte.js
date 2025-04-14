@@ -213,9 +213,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 2–5 kg per acre by mixing with organic manure or soil. Broadcast or apply directly to the root zone before irrigation to enhance nutrient absorption and plant metabolism.",
-                "Foliar Spray: Dissolve 1–2 grams per liter of water (250–500 grams per acre) and spray on plant leaves to improve protein synthesis, enzyme activation, and stress resistance. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 1–1.5 grams per liter of water (200–300 grams per acre) and spray on plant leaves to improve protein synthesis, enzyme activation, and stress resistance. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying in multiple splits to support plant growth and development.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone to enhance root development and microbial activity."
+                "Drenching: Dissolve 200 grams – 250 grams per acre in 200 liters of water and apply directly to the root zone to enhance root development and microbial activity."
             ],
             "Advantages": [
                 "Boosts plant growth and yield",
@@ -242,9 +242,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 2–5 kg per acre by mixing with organic manure or soil. Broadcast or apply directly to the root zone before irrigation to enhance soil fertility, water retention, and nutrient absorption.",
-                "Foliar Spray: Dissolve 1–2 grams per liter of water (250–500 grams per acre) and spray on plant leaves to improve photosynthesis, stress resistance, and overall plant health. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 1–1.5 grams per liter of water (200–300 grams per acre) and spray on plant leaves to improve photosynthesis, stress resistance, and overall plant health. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying in multiple splits to boost root and shoot growth.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone to stimulate microbial activity and increase nutrient availability."
+                "Drenching: Dissolve 200 grams – 250 grams per acre in 200 liters of water and apply directly to the root zone to stimulate microbial activity and increase nutrient availability."
             ],
             "Advantages": [
                 "Increases nutrient efficiency, reducing fertilizer waste",
@@ -275,9 +275,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 1–2 kg per acre by mixing with 50–100 kg of organic manure or soil. Broadcast or apply directly to the root zone before irrigation to improve micronutrient availability and prevent deficiencies.",
-                "Foliar Spray: Dissolve 0.5–1 gram per liter of water (250–500 grams per acre) and spray on plant leaves for rapid nutrient absorption, improving chlorophyll production, enzyme activation, and overall plant growth. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 0.5–1 gram per liter of water (100–200 grams per acre) and spray on plant leaves for rapid nutrient absorption, improving chlorophyll production, enzyme activation, and overall plant growth. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying in multiple splits to ensure efficient uptake of micronutrients like Zn, Fe, Mn, Cu, etc.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone to enhance root development, nutrient transportation, and microbial activity."
+                "Drenching: Dissolve 200 grams – 250 grams per acre in 200 liters of water and apply directly to the root zone to enhance root development, nutrient transportation, and microbial activity."
             ],
             "Advantages": [
                 "Provides a balanced mix of essential micronutrients in a chelated form for better absorption",
@@ -307,9 +307,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 1–2 kg per acre by mixing with 50–100 kg of organic manure or soil. Broadcast or apply directly to the root zone before irrigation for better nutrient availability.",
-                "Foliar Spray: Dissolve 0.5–1 gram per liter of water (250–500 grams per acre) and spray on plant leaves to enhance plant growth, enzyme activity, and nutrient absorption. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 0.5–1 gram per liter of water (100–200 grams per acre) and spray on plant leaves to enhance plant growth, enzyme activity, and nutrient absorption. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying in multiple splits for balanced micronutrient supply.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone to improve root and shoot growth and prevent micronutrient deficiencies."
+                "Drenching: Dissolve 200 grams – 250 grams per acre in 200 liters of water and apply directly to the root zone to improve root and shoot growth and prevent micronutrient deficiencies."
             ],
             "Advantages": [
                 "EDTA chelation ensures high stability and bioavailability of nutrients",
@@ -337,7 +337,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Soil Application: Mix 1–2 kg per acre with 50–100 kg of organic manure or soil and broadcast or apply directly to the root zone before irrigation.",
                 "Foliar Spray: Dissolve 0.5–1 gram per liter of water and spray onto plant leaves for rapid nutrient uptake. Apply in the early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying through the irrigation system in multiple splits.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone for better absorption."
+                "Drenching: Dissolve 200 grams – 250 grams per acre in 200 liters of water and apply directly to the root zone for better absorption."
             ],
             "Advantages": [
                 "High bioavailability: EDTA chelation keeps iron stable and easily absorbable by plants",
@@ -363,9 +363,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 1–2 kg per acre by mixing with 50–100 kg of organic manure or soil. Broadcast or apply directly to the root zone before irrigation for better zinc availability.",
-                "Foliar Spray: Dissolve 0.5–1 gram per liter of water (250–500 grams per acre) and spray on plant leaves to enhance enzyme activity, growth, and chlorophyll production. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 0.5–1 gram per liter of water (100–200 grams per acre) and spray on plant leaves to enhance enzyme activity, growth, and chlorophyll production. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying in multiple splits for steady zinc supply.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone to improve root and shoot growth and prevent zinc deficiency."
+                "Drenching: Dissolve 200 grams – 250 grams per acre in 200 liters of water and apply directly to the root zone to improve root and shoot growth and prevent zinc deficiency."
             ],
             "Advantages": [
                 "High bioavailability: Zinc remains stable and available for plant uptake, even in challenging soil conditions",
@@ -392,9 +392,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 1–2 kg per acre by mixing with organic manure or soil. Broadcast or apply before irrigation to improve nutrient availability and prevent boron deficiency.",
-                "Foliar Spray: Dissolve 0.5–1 gram per liter of water (250–500 grams per acre) and spray on plant leaves to enhance flowering, fruit setting, and overall plant health. Apply in the early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 0.5–1 gram per liter of water (100–200 grams per acre) and spray on plant leaves to enhance flowering, fruit setting, and overall plant health. Apply in the early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying in multiple splits for efficient boron uptake.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone to support root development and nutrient transportation."
+                "Drenching: Dissolve 200 grams – 250 grams per acre in 200 liters of water and apply directly to the root zone to support root development and nutrient transportation."
             ],
             "Advantages": [
                 "High boron concentration ensures effective and efficient correction of boron deficiencies",
@@ -425,9 +425,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 2–5 kg per acre by mixing with organic manure or soil. Broadcast or apply directly to the root zone before irrigation to improve soil structure, water retention, and nutrient absorption.",
-                "Foliar Spray: Dissolve 1–2 grams per liter of water (250–500 grams per acre) and spray on plant leaves to enhance photosynthesis, stress tolerance, and nutrient uptake. Apply in the early morning or late afternoon.",
+                "Foliar Spray: Dissolve 1–1.5 grams per liter of water (200–300 grams per acre) and spray on plant leaves to enhance photosynthesis, stress tolerance, and nutrient uptake. Apply in the early morning or late afternoon.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying in multiple splits for better root growth and nutrient efficiency.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone to stimulate microbial activity and root development."
+                "Drenching: Dissolve 200 grams – 250 grams per acre in 200 liters of water and apply directly to the root zone to stimulate microbial activity and root development."
             ],
             "Advantages": [
                 "High potassium content promotes better flowering and fruiting",
@@ -456,9 +456,8 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 8–10 kg per acre by broadcasting or mixing with organic manure. Incorporate into the soil before irrigation for better calcium and nitrogen availability.",
-                "Foliar Spray: Dissolve 1–2 grams per liter of water (500 grams – 1 kg per acre) and spray on plant leaves to correct calcium deficiency and improve fruit quality. Apply during early morning or late afternoon to avoid leaf burn.",
-                "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 5–10 kg per acre in 200–400 liters of water and applying in multiple splits for efficient nutrient uptake.",
-                "Drenching: Dissolve 5–10 kg per acre in 200 liters of water and apply directly to the root zone to enhance root development and prevent calcium-related disorders like blossom end rot."
+                "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 3–5 kg per acre in 200–400 liters of water and applying in multiple splits for efficient nutrient uptake.",
+                "Drenching: Dissolve 2.5–5 kg per acre in 200 liters of water and apply directly to the root zone to enhance root development and prevent calcium-related disorders like blossom end rot."
             ],
             "Advantages": [
                 "Provides calcium and nitrogen in forms that are immediately available for plant uptake",
@@ -490,9 +489,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 2–5 kg per acre by mixing with organic manure or soil. Broadcast or apply directly to the root zone before irrigation for improved soil health and nutrient uptake.",
-                "Foliar Spray: Dissolve 1–2 grams per liter of water (250–500 grams per acre) and spray on plant leaves for enhanced growth, stress resistance, and nutrient absorption. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 1–1.5 grams per liter of water (200–300 grams per acre) and spray on plant leaves for enhanced growth, stress resistance, and nutrient absorption. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying in multiple splits for steady nutrient supply.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone to promote root development and microbial activity."
+                "Drenching: Dissolve 200 grams – 250 grams per acre in 200 liters of water and apply directly to the root zone to promote root development and microbial activity."
             ],
             "Advantages": [
                 "Derived from green seaweeds, it is environmentally friendly and safe for use in organic farming",
@@ -519,9 +518,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 5–10 kg per acre by broadcasting or mixing with organic manure or soil. Best applied before irrigation or rainfall for better absorption.",
-                "Foliar Spray: Dissolve 3–5 grams per liter of water (1–2 kg per acre) and spray on plant leaves to prevent sulfur deficiency. Avoid spraying during peak sunlight hours.",
-                "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 2–5 kg per acre in 200–400 liters of water and applying in multiple splits.",
-                "Drenching: Dissolve 2–5 kg per acre in 200 liters of water and apply directly to the root zone for efficient sulfur uptake."
+                "Foliar Spray: Dissolve 1–1.5 grams per liter of water (200-300 grams per acre) and spray on plant leaves to prevent sulfur deficiency. Avoid spraying during peak sunlight hours.",
+                "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 2–3 kg per acre in 200–400 liters of water and applying in multiple splits.",
+                "Drenching: Dissolve 200–250 grams per acre in 200 liters of water and apply directly to the root zone for efficient sulfur uptake."
             ],
             "Advantages": [
                 "Improves soil fertility and crop health",
@@ -547,9 +546,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 5–10 kg per acre, either directly or mixed with other fertilizers, for potassium enrichment. Apply before irrigation.",
-                "Foliar Spray: Dissolve 5–10 grams per liter of water (2–5 kg per acre) and spray on plant leaves for quick potassium absorption. Apply during early morning or late afternoon to avoid leaf burn.",
-                "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 5–10 kg per acre in 200–400 liters of water and applying in multiple splits.",
-                "Drenching: Dissolve 5–10 kg per acre in 200 liters of water and apply directly to the root zone for better absorption."
+                "Foliar Spray: Dissolve 2.5–5 grams per liter of water (500–1000 grams per acre) and spray on plant leaves for quick potassium absorption. Apply during early morning or late afternoon to avoid leaf burn.",
+                "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 2.5–5 kg per acre in 200–400 liters of water and applying in multiple splits.",
+                "Drenching: Dissolve 2.5–5 kg per acre in 200 liters of water and apply directly to the root zone for better absorption."
             ],
             "Advantages": [
                 "Delivers a concentrated dose of potassium for optimal plant growth and development",
@@ -579,9 +578,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 5–10 kg per acre by broadcasting or mixing with organic manure. Incorporate into the soil before irrigation to provide balanced nitrogen, phosphorus, and potassium.",
-                "Foliar Spray: Dissolve 4–5 grams per liter of water (2–5 kg per acre) and spray on plant leaves for rapid nutrient absorption and improved vegetative growth. Apply early morning or late afternoon to prevent leaf burn.",
+                "Foliar Spray: Dissolve 2.5–5 grams per liter of water (500-1000 grams per acre) and spray on plant leaves for rapid nutrient absorption and improved vegetative growth. Apply early morning or late afternoon to prevent leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 5–10 kg per acre in 200–400 liters of water and applying in multiple splits for uniform nutrient distribution.",
-                "Drenching: Dissolve 5–10 kg per acre in 200 liters of water and apply directly to the root zone to promote root development and enhance crop yield."
+                "Drenching: Dissolve 2.5–5 kg per acre in 200 liters of water and apply directly to the root zone to promote root development and enhance crop yield."
             ],
             "Advantages": [
                 "Provides equal proportions of nitrogen, phosphorus, and potassium for comprehensive plant growth",
@@ -611,9 +610,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 5–10 kg per acre by broadcasting or mixing with organic manure. Incorporate into the soil before irrigation to ensure balanced nutrient availability.",
-                "Foliar Spray: Dissolve 4–5 grams per liter of water (2–5 kg per acre) and spray on plant leaves for rapid nutrient absorption and enhanced vegetative growth. Apply in the early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 2.5–5 grams per liter of water (500-1000 grams per acre) and spray on plant leaves for rapid nutrient absorption and enhanced vegetative growth. Apply in the early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 5–10 kg per acre in 200–400 liters of water and applying in multiple splits for continuous nutrient supply.",
-                "Drenching: Dissolve 5–10 kg per acre in 200 liters of water and apply directly to the root zone to support root development and boost crop yield."
+                "Drenching: Dissolve 2.5–5 kg per acre in 200 liters of water and apply directly to the root zone to support root development and boost crop yield."
             ],
             "Advantages": [
                 "Provides equal proportions of nitrogen, phosphorus, and potassium for comprehensive plant health and growth",
@@ -644,9 +643,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 5–10 kg per acre by broadcasting or mixing with organic manure. Incorporate into the soil before irrigation to supply balanced nitrogen, phosphorus, and potassium.",
-                "Foliar Spray: Dissolve 4–5 grams per liter of water (2–5 kg per acre) and spray on plant leaves to promote root development, flowering, and fruit setting. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 2.5–5 grams per liter of water (500-1000 grams per acre) and spray on plant leaves to promote root development, flowering, and fruit setting. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 5–10 kg per acre in 200–400 liters of water and applying in multiple splits for efficient phosphorus uptake.",
-                "Drenching: Dissolve 5–10 kg per acre in 200 liters of water and apply directly to the root zone to improve root growth and overall plant health."
+                "Drenching: Dissolve 2.5–5 kg per acre in 200 liters of water and apply directly to the root zone to improve root growth and overall plant health."
             ],
             "Advantages": [
                 "Delivers an extra boost of phosphorus, essential for root development, flowering, and fruit production",
@@ -676,9 +675,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 5–10 kg per acre by broadcasting or mixing with organic manure. Incorporate into the soil before irrigation to ensure proper potassium and nitrogen supply.",
-                "Foliar Spray: Dissolve 4–5 grams per liter of water (2–5 kg per acre) and spray on plant leaves to enhance fruit development, stress resistance, and overall plant health. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 2.5–5 grams per liter of water (500-1000 grams per acre) and spray on plant leaves to enhance fruit development, stress resistance, and overall plant health. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 5–10 kg per acre in 200–400 liters of water and applying in multiple splits for steady potassium availability.",
-                "Drenching: Dissolve 5–10 kg per acre in 200 liters of water and apply directly to the root zone to improve root strength and increase crop yield."
+                "Drenching: Dissolve 2.5–5 kg per acre in 200 liters of water and apply directly to the root zone to improve root strength and increase crop yield."
             ],
             "Advantages": [
                 "Supplies a concentrated source of potassium, supporting flower and fruit development, crop quality, and yield.",
@@ -708,9 +707,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 5–10 kg per acre by broadcasting or mixing with organic manure. Best applied before irrigation to provide a high phosphorus boost for root and early plant development.",
-                "Foliar Spray: Dissolve 4–5 grams per liter of water (2–5 kg per acre) and spray on plant leaves to promote flowering, fruit setting, and strong root growth. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 2.5–5 grams per liter of water (500-1000 grams per acre) and spray on plant leaves to promote flowering, fruit setting, and strong root growth. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 5–10 kg per acre in 200–400 liters of water and applying in multiple splits for efficient phosphorus uptake.",
-                "Drenching: Dissolve 5–10 kg per acre in 200 liters of water and apply directly to the root zone to improve root establishment and early growth stages."
+                "Drenching: Dissolve 2.5–5 kg per acre in 200 liters of water and apply directly to the root zone to improve root establishment and early growth stages."
             ],
             "Advantages": [
                 "Delivers a concentrated dose of phosphorus to enhance root development, energy transfer, and reproductive success.",
@@ -740,9 +739,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 5–10 kg per acre by broadcasting or mixing with organic manure. Best applied before irrigation to improve root development and flowering.",
-                "Foliar Spray: Dissolve 4–5 grams per liter of water (2–5 kg per acre) and spray on plant leaves to enhance flowering, fruit setting, and overall plant health. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 2.5–5 grams per liter of water (500-1000 grams per acre) and spray on plant leaves to enhance flowering, fruit setting, and overall plant health. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 5–10 kg per acre in 200–400 liters of water and applying in multiple splits for efficient phosphorus and potassium uptake.",
-                "Drenching: Dissolve 5–10 kg per acre in 200 liters of water and apply directly to the root zone to promote strong root growth and increase fruit and grain formation."
+                "Drenching: Dissolve 2.5–5 kg per acre in 200 liters of water and apply directly to the root zone to promote strong root growth and increase fruit and grain formation."
             ],
             "Advantages": [
                 "Delivers a significant dose of phosphorus essential for root development, energy transfer, and improved reproductive growth.",
@@ -772,9 +771,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 5–10 kg per acre by broadcasting or mixing with organic manure. Best applied before irrigation to improve root development, flowering, and fruit setting.",
-                "Foliar Spray: Dissolve 4–5 grams per liter of water (2–5 kg per acre) and spray on plant leaves to enhance flowering, fruit development, and stress resistance. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 2.5–5 grams per liter of water (500-1000 grams per acre) and spray on plant leaves to enhance flowering, fruit development, and stress resistance. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 5–10 kg per acre in 200–400 liters of water and applying in multiple splits for efficient phosphorus and potassium absorption.",
-                "Drenching: Dissolve 5–10 kg per acre in 200 liters of water and apply directly to the root zone to strengthen root growth and improve nutrient uptake."
+                "Drenching: Dissolve 2.5–5 kg per acre in 200 liters of water and apply directly to the root zone to strengthen root growth and improve nutrient uptake."
             ],
             "Advantages": [
                 "Provides essential phosphorus for strong root development, energy transfer, and improved reproductive growth.",
@@ -803,9 +802,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "Application": [
                 "Soil Application: Apply 2–5 kg per acre by mixing with organic manure or soil. Broadcast or apply directly to the root zone before irrigation to correct copper deficiency and improve enzyme activity in plants.",
-                "Foliar Spray: Dissolve 1–2 grams per liter of water (250–500 grams per acre) and spray on plant leaves to enhance disease resistance, chlorophyll production, and overall plant health. Apply early morning or late afternoon to avoid leaf burn.",
+                "Foliar Spray: Dissolve 1–2 grams per liter of water (200–400 grams per acre) and spray on plant leaves to enhance disease resistance, chlorophyll production, and overall plant health. Apply early morning or late afternoon to avoid leaf burn.",
                 "Fertigation: Suitable for use in drip or sprinkler irrigation systems by dissolving 500 grams – 1 kg per acre in 100–200 liters of water and applying in multiple splits for steady copper availability.",
-                "Drenching: Dissolve 500 grams – 1 kg per acre in 200 liters of water and apply directly to the root zone to improve root strength, enzyme activation, and overall nutrient uptake."
+                "Drenching: Dissolve 250 grams – 500 grams per acre in 200 liters of water and apply directly to the root zone to improve root strength, enzyme activation, and overall nutrient uptake."
             ],
             "Advantages": [
                 "Provides an essential micronutrient that helps in photosynthesis, enzyme activation, and overall plant growth.",

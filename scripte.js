@@ -162,9 +162,9 @@ saveCustomerDetailsButton.addEventListener("click", () => {
     const customerName = document.getElementById("customerName").value.trim();
     const customerAddress = document.getElementById("customerAddress").value.trim();
     const customerNumber = document.getElementById("customerNumber").value.trim();
-    const referenceCode = document.getElementById("referenceCode").value.trim();
+    const RetailersCode = document.getElementById("RetailersCode").value.trim();
 
-    if (!customerName || !customerAddress || !customerNumber || !referenceCode) {
+    if (!customerName || !customerAddress || !customerNumber || !RetailersCode) {
         alert("Please fill in all fields.");
         return;
     }

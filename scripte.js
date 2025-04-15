@@ -134,7 +134,7 @@ placeOrderButton.addEventListener("click", () => {
         return;
     }
 
-    let orderDetails = `Order Details:\nName: ${customerName}\nAddress: ${customerAddress}\nReferenceCode: ${RetailersCode}\nMobile: ${customerNumber}\n`;
+    let orderDetails = `Order Details:\nName: ${customerName}\nAddress: ${customerAddress}\nRetailersCode: ${RetailersCode}\nMobile: ${customerNumber}\n`;
     orderDetails += `\nProducts:\n`;
 
 

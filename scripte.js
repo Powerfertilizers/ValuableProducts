@@ -147,7 +147,7 @@ placeOrderButton.addEventListener("click", () => {
 
     // Encode the message for WhatsApp URL
     const whatsappMessage = encodeURIComponent(orderDetails);
-    const whatsappLink = `https://wa.me/+918208195103?text=${whatsappMessage}`;
+    const whatsappLink = `https://wa.me/+918010876355?text=${whatsappMessage}`;
 
     // Open the WhatsApp link
     window.open(whatsappLink, "_blank");

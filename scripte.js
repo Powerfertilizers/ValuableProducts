@@ -127,14 +127,14 @@ placeOrderButton.addEventListener("click", () => {
     const customerName = document.getElementById("customerName").value.trim();
     const customerAddress = document.getElementById("customerAddress").value.trim();
     const customerNumber = document.getElementById("customerNumber").value.trim();
-    const referenceCode = document.getElementById("referenceCode").value.trim();
+    const RetailersCode = document.getElementById("RetailersCode").value.trim();
 
-    if (!customerName || !customerAddress || !customerNumber || !referenceCode) {
+    if (!customerName || !customerAddress || !customerNumber || !RetailersCode) {
         alert("Please fill your details before placing an order.");
         return;
     }
 
-    let orderDetails = `Order Details:\nName: ${customerName}\nAddress: ${customerAddress}\nReferenceCode: ${referenceCode}\nMobile: ${customerNumber}\n`;
+    let orderDetails = `Order Details:\nName: ${customerName}\nAddress: ${customerAddress}\nReferenceCode: ${RetailersCode}\nMobile: ${customerNumber}\n`;
     orderDetails += `\nProducts:\n`;
 
 

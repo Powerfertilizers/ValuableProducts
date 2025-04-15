@@ -210,14 +210,14 @@
     <!-- Customer Details Section -->
     <section id="customerDetails"
         style="max-width: 1000px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); text-align: center; background: #f9f9f9;">
-        <h5 style="margin-bottom: 15px; font-size: 18px; color: #333;">Customer Details </h5>
+        <h5 style="margin-bottom: 15px; font-size: 18px; color: #333;">Customer Details / ग्राहकाचे तपशील</h5>
         <input type="text" id="customerName" placeholder="Your Name / तुमचे नाव"
             style="width: 95%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
         <input type="text" id="customerAddress" placeholder="Your Address / तुमचा पत्ता"
             style="width: 95%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
         <input type="text" id="customerNumber" placeholder="Your Number / तुमचा नंबर"
             style="width: 95%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
-        <input type="text" id="RetailersCode" placeholder="Retailers Code / खुदरा विक्रेता कोड"
+        <input type="text" id="referenceCode" placeholder="Reference Code / संदर्भ कोड"
             style="width: 95%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
         <style>
             #saveCustomerDetails:hover {
@@ -236,51 +236,53 @@
     <section class="Organic Product">
         <section id="products1">
             <h4 style="text-align: center; font-size: 20px; margin: 10px; text-transform: uppercase;">Our Products</h4>
-            <h4 style="color: Green; text-align: center; font-size: 25px; margin: 1px;">Organic Products
+            <h4 style="color: Green; text-align: center; font-size: 20px; margin: 1px;">Organic Products
             </h4>
             <hr style="width:90%; margin-top: 0rem; margin-bottom: 0rem;">
             <div class="product-grid">
 
                 <!-- Product 01 -->
-                <div class="product" data-name="Amino Acids 80% Powder" data-price="750">
+                <div class="product" data-name="Amino Acids 80% Powder" data-price="223">
                     <img src="https://i.ibb.co/RS4gKg8/Amino-Acids.jpg" alt="Amino Acids 80% Powder">
                     <h3><a href="#" class="open-modal" data-target="modal-amino">Amino Acids 80% Powder</a></h3>
-                    <p>Price: ₹750/kg</p>
+                    <p>Price: ₹223/kg</p>
                     <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
                     <button class="addCartButton">Add to Cart</button>
                 </div>
 
                 <!-- Product 02 -->
-                <div class="product" data-name="Potassium Fulvic Acids 80% Powder" data-price="1200">
+                <div class="product" data-name="Potassium Fulvic Acids 80% Powder" data-price="330">
                     <img src="https://i.ibb.co/KXymVDc/Potassium-Fulvic-Acids.png" alt="Potassium-Fulvic-Acids"
                         border="0">
                     <h3><a href="#" class="open-modal" data-target="modal-potassium">Potassium Fulvic Acids 80%
                             Powder</a></h3>
-                    <p>Price: ₹1200/kg</p>
-                    <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
-                    <button class="addCartButton">Add to Cart</button>
+                    <p>Price: ₹330/kg</p>
+                    <p style="color: red; font-weight: bold;">Out of Stock</p>
+                    <input type="number" class="custom-input" placeholder="Quantity / प्रमाण"disabled>
+                    <button class="addCartButton"disabled>Add to Cart</button>
                 </div>
 
                 <!-- Product 03 -->
-                <div class="product" data-name="Potassium Humate Shiny Flakes 98%" data-price="350">
+                <div class="product" data-name="Potassium Humate Shiny Flakes 98%" data-price="250">
                     <img src="https://i.ibb.co/xhj5wmS/Potassium-Humate.png" alt="Potassium Humate" border="0">
                     <h3><a href="#" class="open-modal" data-target="modal-potassium-humate">Potassium Humate Shiny
                             Flakes
                             98%</a></h3>
-                    <p>Price: ₹350/kg</p>
+                    <p>Price: ₹250/kg</p>
                     <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
                     <button class="addCartButton">Add to Cart</button>
                 </div>
 
                 <!-- Product 04 -->
-                <div class="product" data-name="Green Seaweeds Extracts Powder" data-price="1250">
+                <div class="product" data-name="Green Seaweeds Extracts Powder" data-price="---">
                     <img src="https://i.ibb.co/Jmn3yWT/Green-Seaweeds-Extracts.png" alt="Green-Seaweeds-Extracts"
                         border="0">
                     <h3><a href="#" class="open-modal" data-target="modal-seaweed">Green Seaweeds Extracts
                             Powder</a></h3>
-                    <p>Price: ₹1250/kg</p>
-                    <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
-                    <button class="addCartButton">Add to Cart</button>
+                    <p>Price: ₹---/kg</p>
+                    <p style="color: red; font-weight: bold;">Out of Stock</p>
+                    <input type="number" class="custom-input" placeholder="Quantity / प्रमाण"disabled>
+                    <button class="addCartButton"disabled>Add to Cart</button>
                 </div>
         </section>
         <!-- Section Finish  of Organic Products Section -->
@@ -289,27 +291,27 @@
         <!-- Micronutrients Products Section -->
         <section class="Micronutrients Products">
             <section id="products2">
-                <h4 style="color: Green; text-align: center; font-size: 25px; margin: 1px;">
+                <h4 style="color: Green; text-align: center; font-size: 20px; margin: 1px;">
                     Micronutrients Products</h4>
                 <hr style="width:90%; margin-top: 0rem; margin-bottom: 0rem;">
                 <div class="product-grid">
 
                     <!-- Product 01 -->
-                    <div class="product" data-name="Ferrous Chelated 12% EDTA Powder" data-price="850">
+                    <div class="product" data-name="Ferrous Chelated 12% EDTA Powder" data-price="450">
                         <img src="https://i.ibb.co/s9xQYk9/Ferrus-Chelated.png" alt="Ferrous Chelated" border="0">
                         <h3><a href="#" class="open-modal" data-target="modal-ferrous">Ferrous Chelated 12% EDTA
                                 Powder</a></h3>
-                        <p>Price: ₹850/kg</p>
+                        <p>Price: ₹450/kg</p>
                         <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
                         <button class="addCartButton">Add to Cart</button>
                     </div>
 
                     <!-- Product 02 -->
-                    <div class="product" data-name="Zinc Chelated 12% EDTA Powder" data-price="550">
+                    <div class="product" data-name="Zinc Chelated 12% EDTA Powder" data-price="450">
                         <img src="https://i.ibb.co/WDJs8rv/Zinc-Chelated.png" alt="Zinc Chelated" border="0">
                         <h3><a href="#" class="open-modal" data-target="modal-zinc">Zinc Chelated 12% EDTA Powder</a>
                         </h3>
-                        <p>Price: ₹550/kg</p>
+                        <p>Price: ₹450/kg</p>
                         <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
                         <button class="addCartButton">Add to Cart</button>
                     </div>
@@ -324,23 +326,23 @@
                     </div>
 
                     <!-- Product 04 -->
-                    <div class="product" data-name="Chelated Micro nutrients EDTA Powder" data-price="820">
+                    <div class="product" data-name="Chelated Micro nutrients EDTA Powder" data-price="500">
                         <img src="https://i.ibb.co/Y0L1pxQ/Chelated-Mix-Micronutrients-EDTA.png"
                             alt="Chelated-Mix-Micronutrients-EDTA" border="0">
                         <h3><a href="#" class="open-modal" data-target="modal-chelated">Chelated Micro nutrients EDTA
                                 Powder</a></h3>
-                        <p>Price: ₹820/kg</p>
+                        <p>Price: ₹500/kg</p>
                         <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
                         <button class="addCartButton">Add to Cart</button>
                     </div>
 
                     <!-- Product 04 -->
-                    <div class="product" data-name="Micro nutrients EDTA Powder" data-price="800">
+                    <div class="product" data-name="Micro nutrients EDTA Powder" data-price="500">
                         <img src="https://i.ibb.co/rQDJsww/Micronutrients-EDTA.png" alt="Micronutrients-EDTA"
                             border="0">
                         <h3><a href="#" class="open-modal" data-target="modal-micronutrients">Micro nutrients EDTA
                                 Powder</a></h3>
-                        <p>Price: ₹800/kg</p>
+                        <p>Price: ₹500/kg</p>
                         <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
                         <button class="addCartButton">Add to Cart</button>
                     </div>
@@ -362,7 +364,7 @@
         <!-- NPK Special Formulations -->
         <section class="NPK Special Formulations">
             <section id="products3">
-                <h4 style="color: Green; text-align: center; font-size: 25px; margin: 1px; ">NPK Special
+                <h4 style="color: Green; text-align: center; font-size: 20px; margin: 1px; ">NPK Special
                     Formulations</h4>
                 <hr style="width:90%; margin-top: 0rem; margin-bottom: 0rem;">
                 <div class="product-grid">
@@ -453,7 +455,7 @@
             <!-- Macronutrients Products Section -->
             <section class="Macronutrients Products Section">
                 <section id="products4">
-                    <h4 style="color: Green; text-align: center; font-size: 25px; margin: 1px;">
+                    <h4 style="color: Green; text-align: center; font-size: 20px; margin: 1px;">
                         Macronutrients Products</h4>
                     <hr style="width:90%; margin-top: 0rem; margin-bottom: 0rem;">
                     <div class="product-grid">
@@ -470,10 +472,10 @@
                         </div>
 
                         <!-- Product 02 -->
-                        <div class="product" data-name="Sulfur Powder" data-price="150">
+                        <div class="product" data-name="Sulfur Powder" data-price="140">
                             <img src="https://i.ibb.co/7nXmp9g/Sulfur.png" alt="Sulfur" border="0">
                             <h3><a href="#" class="open-modal" data-target="modal-sulfur">Sulfur Powder</a></h3>
-                            <p>Price: ₹150/kg</p>
+                            <p>Price: ₹140/kg</p>
                             <input type="number" class="custom-input" placeholder="Quantity / प्रमाण">
                             <button class="addCartButton">Add to Cart</button>
                         </div>
@@ -484,7 +486,7 @@
                 <!-- Special Slurry Formulation Section -->
                 <section class="Special Slurry Formulation Section">
                     <section id="products5">
-                        <h4 style="Color: Green; text-align: center; font-size: 25px; margin: 1px;">
+                        <h4 style="Color: Green; text-align: center; font-size: 20px; margin: 1px;">
                             Special Slurry Formulation</h4>
                         <hr style="width:90%; margin-top: 0rem; margin-bottom: 0rem;">
                         <div class="product-grid">
@@ -569,7 +571,7 @@
                         .floating-buttons {
                             position: fixed;
                             bottom: 5%;
-                            left: 5%;
+                            left: 3%;
                             display: none;
                             flex-direction: column;
                             gap: 10px;

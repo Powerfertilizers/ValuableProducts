@@ -134,7 +134,7 @@ placeOrderButton.addEventListener("click", () => {
         return;
     }
 
-    let orderDetails = `Order Details:\nName: ${customerName}\nAddress: ${customerAddress}\nRetailers Code: ${RetailersCode}\nMobile: ${customerNumber}\n`;
+    let orderDetails = `Order Details:\nName: ${customerName}\nAddress: ${customerAddress}\nMobile: ${customerNumber}\nRetailer's Code: ${RetailersCode}\n`;
     orderDetails += `\nProducts:\n`;
 
 
@@ -504,9 +504,9 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         }
         ,
-        "Sulfur Powder":
+        "Sulfur 90% Powder":
         {
-            "General Details": "Sulfur powder is a fine, yellow crystalline substance derived from natural sulfur deposits. It is widely used in agriculture as a fungicide, pesticide, and soil conditioner to enhance crop growth and soil health.",
+            "General Details": "Sulfur 90% Powder is a fine, yellow crystalline substance derived from natural sulfur deposits. It is widely used in agriculture as a fungicide, pesticide, and soil conditioner to enhance crop growth and soil health.",
             "Composition": {
                 "Elemental Sulfur (S)": "Pure sulfur, essential for plant growth and soil conditioning"
             },
@@ -837,8 +837,8 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
 
             "Application": [
-                "Soil Application: Apply 5–10 litres per bed or 50–100 litres per acre 7–10 days before planting to allow microbial colonization.",
-                "Compost Enrichment: Add 10–20 litres per ton of compost to accelerate decomposition and nutrient cycling.",
+                "Soil Application: Apply 5–10 kg per bed or 50–100 kg per acre 7–10 days before planting to allow microbial colonization.",
+                "Compost Enrichment: Add 10–20 kg per ton of compost to accelerate decomposition and nutrient cycling.",
                 "In-Crop Drenching (Optional): Dilute at 1:10 with water and apply around the base of plants once every 15–30 days to promote root health and microbial support.",
                 "Not Recommended for Foliar Use: Due to thick organic content, this slurry is best suited for soil applications."
             ],

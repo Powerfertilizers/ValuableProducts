@@ -993,23 +993,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-//function for NPK Special Formulation Products button
+//function for Macronutrients Products button
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector(".floating-btn.sub-btn4");
     const productsSection = document.getElementById("products4");
-
-    if (button && productsSection) {
-        button.addEventListener("click", function () {
-            productsSection.style.display = "block";
-            productsSection.scrollIntoView({ behavior: "smooth" });
-        });
-    }
-});
-
-//function for Special Slurry Formulation button
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.querySelector(".floating-btn.sub-btn5");
-    const productsSection = document.getElementById("products5");
 
     if (button && productsSection) {
         button.addEventListener("click", function () {

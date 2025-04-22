@@ -513,45 +513,18 @@
                             List📒</a>
                     </div>
                     <style>
-                        /* Floating Button 1 */
-                        .floating-btn1 {
-                            position: fixed;
-                            bottom: 5%;
-                            right: 1px;
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 10%;
-                            background: rgba(177, 212, 250, 0.3);
-                            /* Adjust transparency */
-                            color: white;
-                            font-size: 15px;
-                            border: 2px solid rgba(177, 212, 250, 0.5);
-                            /* Optional border */
-                            cursor: pointer;
-                            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            transition: 0.3s;
-                        }
-
-                        .floating-btn1:hover {
-                            background: rgba(0, 86, 179, 0.5);
-                            /* Slightly darker on hover */
-                            transform: scale(1.1);
-                        }
 
                         /* Floating Main Button2 */
                         .floating-btn2 {
                             position: fixed;
                             bottom: 5%;
-                            left: 1px;
+                            Right: 1px;
                             width: 40px;
                             height: 40px;
                             border-radius: 10%;
                             background: rgba(177, 212, 250, 0.3);
                             color: white;
-                            font-size: 20px;
+                            font-size: 15px;
                             border: 2px solid rgba(177, 212, 250, 0.5);
                             cursor: pointer;
                             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -561,16 +534,13 @@
                             transition: 0.3s;
                         }
 
-                        .floating-btn1:hover {
-                            background: rgba(0, 86, 179, 0.5);
-                            transform: scale(1.1);
-                        }
+                        
 
                         /* Hidden Buttons */
                         .floating-buttons {
                             position: fixed;
                             bottom: 5%;
-                            left: 5%;
+                            right: 15%;
                             display: none;
                             flex-direction: column;
                             gap: 10px;
@@ -587,7 +557,7 @@
                             /* Prevents it from getting too large */
                             height: 40px;
                             border-radius: 4px;
-                            background: rgb(0, 87, 179);
+                            background: #0056b3;
                             color: white;
                             font-size: 14px;
                             font-weight: bold;
@@ -598,7 +568,7 @@
                         }
 
                         .floating-btn:hover {
-                            background: rgba(0, 86, 179, 0.8);
+                            background: ##0056b3;
                             transform: scale(1.05);
                         }
 
@@ -683,9 +653,7 @@
                         }
                     </style>
 
-                    <!-- Floating Button1 -->
-                    <button id="scrollToCartBtn" class="floating-btn1">🛒</button>
-
+                    
                     <!-- Floating Button2 -->
                     <button class="floating-btn2" id="main-btn">🏠</button>
 
@@ -695,6 +663,8 @@
                         <button class="floating-btn sub-btn2">Micronutrients Products </button>
                         <button class="floating-btn sub-btn3">NPK Special Formulation </button>
                         <button class="floating-btn sub-btn4">Macronutrients Products </button>
+                        <button class="floating-btn sub-btn5">Cart Details </button>
+                        <button class="floating-btn sub-btn6">Customer Details </button>
                     </div>
 
                     <section id="cartDetails">

@@ -927,10 +927,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Floating1 button behaviour 
-document.getElementById("scrollToCartBtn").addEventListener("click", function () {
-    document.getElementById("cartDetails").scrollIntoView({ behavior: "smooth" });
-});
 
 // floating button 2  
 document.getElementById("main-btn").addEventListener("click", function () {
@@ -997,6 +993,32 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector(".floating-btn.sub-btn4");
     const productsSection = document.getElementById("products4");
+
+    if (button && productsSection) {
+        button.addEventListener("click", function () {
+            productsSection.style.display = "block";
+            productsSection.scrollIntoView({ behavior: "smooth" });
+        });
+    }
+});
+
+//function for Cart Details Section
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".floating-btn.sub-btn5");
+    const productsSection = document.getElementById("cartDetails");
+
+    if (button && productsSection) {
+        button.addEventListener("click", function () {
+            productsSection.style.display = "block";
+            productsSection.scrollIntoView({ behavior: "smooth" });
+        });
+    }
+});
+
+//function for Cart Details Section
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".floating-btn.sub-btn6");
+    const productsSection = document.getElementById("customerDetails");
 
     if (button && productsSection) {
         button.addEventListener("click", function () {
